@@ -1,0 +1,1914 @@
+/*
+*  Elements that can be changed will hint this by dimming and fading a little on hover
+*/
+/*
+ * Toothradio. Some (eg trauma) are not changeable, hence the option.
+ */
+/*
+ * Custom Radio
+ */
+/*
+ * Custom Radio Squared
+ */
+/*
+ * Checkboxes underscored.
+ */
+/*
+ * Create Clock
+ */
+/*
+ * Turf Block
+ */
+/*
+ * Toothradio single elements
+ */
+/*
+ * Custom Radio Round
+ */
+@font-face {
+  font-family: "Kirsty";
+  src: url("assets/fonts/Kirsty/Kirsty.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kirsty";
+  src: url("assets/fonts/Kirsty/KirstyBold.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kirsty";
+  src: url("assets/fonts/Kirsty/KirstyBoldItalic.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Kirsty";
+  src: url("assets/fonts/Kirsty/KirstyItalic.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Crimson Text";
+  src: url("assets/fonts/CrimsonText/CrimsonText-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Crimson Text";
+  src: url("assets/fonts/CrimsonText/CrimsonText-Bold.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Crimson Text";
+  src: url("assets/fonts/CrimsonText/CrimsonText-BoldItalic.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Crimson Text";
+  src: url("assets/fonts/CrimsonText/CrimsonText-Italic.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Crimson Text";
+  src: url("assets/fonts/CrimsonText/CrimsonText-SemiBold.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Crimson Text";
+  src: url("assets/fonts/CrimsonText/CrimsonText-SemiBoldItalic.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 600;
+  font-style: italic;
+}
+.beam-saber {
+  font-family: "Crimson Text", serif;
+}
+.beam-saber textarea {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.beam-saber .debug-toggle {
+  opacity: 0.1;
+}
+.beam-saber .debug-toggle.on {
+  opacity: 0.75;
+}
+.beam-saber .rollable-text {
+  transition: color 0.2s;
+}
+.beam-saber .rollable-text:hover {
+  cursor: pointer;
+  color: red;
+}
+.dice-tooltip .dice-rolls .roll.method {
+  font-size: var(--font-size-10);
+  background: transparent;
+  min-width: auto;
+  line-height: 10px;
+  vertical-align: super;
+}
+.beam-saber section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.beam-saber section > *:not(.label-stripe) {
+  margin-right: 10px;
+}
+.beam-saber section > *:not(.label-stripe):last-child {
+  margin-right: 0px;
+}
+.beam-saber section .grow-one {
+  flex-grow: 1;
+}
+.beam-saber section .grow-two {
+  flex-grow: 2;
+}
+.beam-saber section.experience {
+  margin-bottom: 0px;
+  justify-content: center;
+}
+.beam-saber .flex-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.beam-saber .flex-vertical {
+  display: flex;
+  flex-direction: column;
+}
+.beam-saber .tab[data-tab] {
+  display: none;
+}
+.beam-saber .tab[data-tab].active {
+  display: block;
+}
+.beam-saber .black-label {
+  background-color: #191813;
+  color: #EEEFFF;
+  font-size: 21px;
+  text-align: center;
+  padding: 0px 5px;
+  height: 30px !important;
+  text-transform: capitalize;
+  font-family: Kirsty, serif;
+}
+.beam-saber .gray-label {
+  background-color: #999;
+  color: #191813;
+  font-size: 21px;
+  text-align: center;
+  padding: 0px 5px;
+  height: 30px !important;
+  text-transform: capitalize;
+  font-family: Kirsty, serif;
+}
+.beam-saber .label-stripe {
+  text-transform: uppercase;
+  background-color: #191813;
+  color: #EEEFFF;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  font-weight: bold;
+}
+.beam-saber .label-stripe-gray {
+  text-transform: uppercase;
+  background-color: #999;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  font-weight: bold;
+}
+.beam-saber .editor,
+.beam-saber .editor-content {
+  min-height: 150px;
+}
+.beam-saber .cohort-description,
+.beam-saber .gang-description {
+  font-style: italic;
+}
+.beam-saber i.nullifier {
+  transition: filter 0.2s;
+  cursor: pointer;
+}
+.beam-saber i.nullifier:hover {
+  filter: brightness(0.8);
+  opacity: 0.9;
+  color: red;
+}
+.beam-saber .loadout select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  background: url("data:image/svg+xml;utf8,<svg fill='white' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>") no-repeat right;
+  padding: 0 20px 0 0;
+  margin: 0.1em -6px 0 0;
+  background-color: #191813;
+  font-family: Georgia, "Bitstream Charter", "Times New Roman", serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  text-align: right;
+}
+.beam-saber .loadout select option {
+  color: white;
+}
+.beam-saber .loadout select:hover {
+  color: red;
+}
+.beam-saber .abilities .item-name, .beam-saber .loadout .item-name, .beam-saber .faction-items .item-name {
+  width: 100px;
+  margin-left: 10px;
+}
+.beam-saber .abilities .item-body, .beam-saber .loadout .item-body, .beam-saber .faction-items .item-body {
+  width: auto;
+}
+.beam-saber .abilities .item-description, .beam-saber .loadout .item-description, .beam-saber .faction-items .item-description {
+  width: 260px;
+}
+.beam-saber td {
+  padding: 5px;
+}
+/* --Controls minimum size of windows--*/
+.beam-saber {
+  min-width: 360px;
+  min-height: 320px;
+}
+/* --Start Clocks--*/
+.beam-saber .clock-zero-label {
+  color: #191813;
+}
+.beam-saber .clocks.clocks-4 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.beam-saber .clocks.clocks-4 .blades-clock {
+  position: relative;
+  padding: 0;
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+  list-style: none;
+  overflow: hidden;
+  background-size: cover;
+}
+.beam-saber .clocks.clocks-4 .blades-clock label {
+  overflow: hidden;
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  transform-origin: 0% 100%;
+  transition: filter 0.1s;
+  cursor: pointer;
+}
+.beam-saber .clocks.clocks-4 .blades-clock label:hover {
+  filter: brightness(0.8);
+  opacity: 0.9;
+}
+.beam-saber .clocks.clocks-4 .blades-clock input {
+  position: absolute;
+  display: none;
+}
+.beam-saber .clocks.clocks-4 .blades-clock input[value="0"] {
+  display: none;
+}
+.beam-saber .clocks.clocks-4 .blades-clock *:nth-child(3) {
+  transform: rotate(0deg) skewY(180deg);
+}
+.beam-saber .clocks.clocks-4 .blades-clock *:nth-child(5) {
+  transform: rotate(90deg) skewY(180deg);
+}
+.beam-saber .clocks.clocks-4 .blades-clock *:nth-child(7) {
+  transform: rotate(180deg) skewY(180deg);
+}
+.beam-saber .clocks.clocks-4 .blades-clock *:nth-child(9) {
+  transform: rotate(270deg) skewY(180deg);
+}
+.beam-saber .clocks.clocks-6 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.beam-saber .clocks.clocks-6 .blades-clock {
+  position: relative;
+  padding: 0;
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+  list-style: none;
+  overflow: hidden;
+  background-size: cover;
+}
+.beam-saber .clocks.clocks-6 .blades-clock label {
+  overflow: hidden;
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  transform-origin: 0% 100%;
+  transition: filter 0.1s;
+  cursor: pointer;
+}
+.beam-saber .clocks.clocks-6 .blades-clock label:hover {
+  filter: brightness(0.8);
+  opacity: 0.9;
+}
+.beam-saber .clocks.clocks-6 .blades-clock input {
+  position: absolute;
+  display: none;
+}
+.beam-saber .clocks.clocks-6 .blades-clock input[value="0"] {
+  display: none;
+}
+.beam-saber .clocks.clocks-6 .blades-clock *:nth-child(3) {
+  transform: rotate(0deg) skewY(150deg);
+}
+.beam-saber .clocks.clocks-6 .blades-clock *:nth-child(5) {
+  transform: rotate(60deg) skewY(150deg);
+}
+.beam-saber .clocks.clocks-6 .blades-clock *:nth-child(7) {
+  transform: rotate(120deg) skewY(150deg);
+}
+.beam-saber .clocks.clocks-6 .blades-clock *:nth-child(9) {
+  transform: rotate(180deg) skewY(150deg);
+}
+.beam-saber .clocks.clocks-6 .blades-clock *:nth-child(11) {
+  transform: rotate(240deg) skewY(150deg);
+}
+.beam-saber .clocks.clocks-6 .blades-clock *:nth-child(13) {
+  transform: rotate(300deg) skewY(150deg);
+}
+.beam-saber .clocks.clocks-8 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.beam-saber .clocks.clocks-8 .blades-clock {
+  position: relative;
+  padding: 0;
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+  list-style: none;
+  overflow: hidden;
+  background-size: cover;
+}
+.beam-saber .clocks.clocks-8 .blades-clock label {
+  overflow: hidden;
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  transform-origin: 0% 100%;
+  transition: filter 0.1s;
+  cursor: pointer;
+}
+.beam-saber .clocks.clocks-8 .blades-clock label:hover {
+  filter: brightness(0.8);
+  opacity: 0.9;
+}
+.beam-saber .clocks.clocks-8 .blades-clock input {
+  position: absolute;
+  display: none;
+}
+.beam-saber .clocks.clocks-8 .blades-clock input[value="0"] {
+  display: none;
+}
+.beam-saber .clocks.clocks-8 .blades-clock *:nth-child(3) {
+  transform: rotate(0deg) skewY(120deg);
+}
+.beam-saber .clocks.clocks-8 .blades-clock *:nth-child(5) {
+  transform: rotate(45deg) skewY(120deg);
+}
+.beam-saber .clocks.clocks-8 .blades-clock *:nth-child(7) {
+  transform: rotate(90deg) skewY(120deg);
+}
+.beam-saber .clocks.clocks-8 .blades-clock *:nth-child(9) {
+  transform: rotate(135deg) skewY(120deg);
+}
+.beam-saber .clocks.clocks-8 .blades-clock *:nth-child(11) {
+  transform: rotate(180deg) skewY(120deg);
+}
+.beam-saber .clocks.clocks-8 .blades-clock *:nth-child(13) {
+  transform: rotate(225deg) skewY(120deg);
+}
+.beam-saber .clocks.clocks-8 .blades-clock *:nth-child(15) {
+  transform: rotate(270deg) skewY(120deg);
+}
+.beam-saber .clocks.clocks-8 .blades-clock *:nth-child(17) {
+  transform: rotate(315deg) skewY(120deg);
+}
+.beam-saber .clocks.clocks-10 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+
+}
+.beam-saber .clocks.clocks-10 .blades-clock {
+  position: relative;
+  padding: 0;
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+  list-style: none;
+  overflow: hidden;
+  background-size: cover;
+}
+.beam-saber .clocks.clocks-10 .blades-clock label {
+  overflow: hidden;
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  transform-origin: 0% 100%;
+  transition: filter 0.1s;
+  cursor: pointer;
+}
+.beam-saber .clocks.clocks-10 .blades-clock label:hover {
+  filter: brightness(0.8);
+  opacity: 0.9;
+}
+.beam-saber .clocks.clocks-10 .blades-clock input {
+  position: absolute;
+  display: none;
+}
+.beam-saber .clocks.clocks-10 .blades-clock input[value="0"] {
+  display: none;
+}
+.beam-saber .clocks.clocks-10 .blades-clock *:nth-child(3) {
+  transform: rotate(0deg) skewY(135deg);
+}
+.beam-saber .clocks.clocks-10 .blades-clock *:nth-child(5) {
+  transform: rotate(36deg) skewY(135deg);
+}
+.beam-saber .clocks.clocks-10 .blades-clock *:nth-child(7) {
+  transform: rotate(72deg) skewY(135deg);
+}
+.beam-saber .clocks.clocks-10 .blades-clock *:nth-child(9) {
+  transform: rotate(108deg) skewY(135deg);
+}
+.beam-saber .clocks.clocks-10 .blades-clock *:nth-child(11) {
+  transform: rotate(144deg) skewY(135deg);
+}
+.beam-saber .clocks.clocks-10 .blades-clock *:nth-child(13) {
+  transform: rotate(180deg) skewY(135deg);
+}
+.beam-saber .clocks.clocks-10 .blades-clock *:nth-child(15) {
+  transform: rotate(216deg) skewY(135deg);
+}
+.beam-saber .clocks.clocks-10 .blades-clock *:nth-child(17) {
+  transform: rotate(252deg) skewY(135deg);
+}
+.beam-saber .clocks.clocks-10 .blades-clock *:nth-child(19) {
+  transform: rotate(288deg) skewY(135deg);
+}
+.beam-saber .clocks.clocks-10 .blades-clock *:nth-child(21) {
+  transform: rotate(324deg) skewY(135deg);
+}
+.beam-saber .clocks.clocks-12 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.beam-saber .clocks.clocks-12 .blades-clock {
+  position: relative;
+  padding: 0;
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+  list-style: none;
+  overflow: hidden;
+  background-size: cover;
+}
+.beam-saber .clocks.clocks-12 .blades-clock label {
+  overflow: hidden;
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  transform-origin: 0% 100%;
+  transition: filter 0.1s;
+  cursor: pointer;
+}
+.beam-saber .clocks.clocks-12 .blades-clock label:hover {
+  filter: brightness(0.8);
+  opacity: 0.9;
+}
+.beam-saber .clocks.clocks-12 .blades-clock input {
+  position: absolute;
+  display: none;
+}
+.beam-saber .clocks.clocks-12 .blades-clock input[value="0"] {
+  display: none;
+}
+.beam-saber .clocks.clocks-12 .blades-clock *:nth-child(3) {
+  transform: rotate(0deg) skewY(120deg);
+}
+.beam-saber .clocks.clocks-12 .blades-clock *:nth-child(5) {
+  transform: rotate(30deg) skewY(120deg);
+}
+.beam-saber .clocks.clocks-12 .blades-clock *:nth-child(7) {
+  transform: rotate(60deg) skewY(120deg);
+}
+.beam-saber .clocks.clocks-12 .blades-clock *:nth-child(9) {
+  transform: rotate(90deg) skewY(120deg);
+}
+.beam-saber .clocks.clocks-12 .blades-clock *:nth-child(11) {
+  transform: rotate(120deg) skewY(120deg);
+}
+.beam-saber .clocks.clocks-12 .blades-clock *:nth-child(13) {
+  transform: rotate(150deg) skewY(120deg);
+}
+.beam-saber .clocks.clocks-12 .blades-clock *:nth-child(15) {
+  transform: rotate(180deg) skewY(120deg);
+}
+.beam-saber .clocks.clocks-12 .blades-clock *:nth-child(17) {
+  transform: rotate(210deg) skewY(120deg);
+}
+.beam-saber .clocks.clocks-12 .blades-clock *:nth-child(19) {
+  transform: rotate(240deg) skewY(120deg);
+}
+.beam-saber .clocks.clocks-12 .blades-clock *:nth-child(21) {
+  transform: rotate(270deg) skewY(120deg);
+}
+.beam-saber .clocks.clocks-12 .blades-clock *:nth-child(23) {
+  transform: rotate(300deg) skewY(120deg);
+}
+.beam-saber .clocks.clocks-12 .blades-clock *:nth-child(25) {
+  transform: rotate(330deg) skewY(120deg);
+}
+.beam-saber .blades-clock-name-type > * {
+  margin-bottom: 10px;
+}
+.beam-saber .blades-clock-name {
+    height: 60px;
+    text-align: center;
+	margin: 10px auto;
+}
+.beam-saber .clock-name input {
+    height: 40px;
+    line-height: 48px;
+    font-size: 32px;
+    width: 100%;
+    background: none;
+    border: 1px solid transparent;
+    padding: 1px 3px;
+    font-family: "Kirsty", "Crimson Text", serif;
+    border-radius: 3px;
+    color: rgb(25, 24, 19);
+    margin: 3px;
+	text-align: center;
+}
+.beam-saber .clock-name.editable input:hover,
+.beam-saber .clock-name.editable input:focus {
+    border: 1px solid rgb(25, 24, 19);
+}
+.beam-saber .clock-config {
+    text-align: center;
+}
+.beam-saber .clock-config .clock-config-group {
+    margin-left: 1.5em;
+    display: inline-block;
+}
+.beam-saber .clock-config .clock-config-group:first-child {
+    margin-left: 0;
+}
+.beam-saber .clock-config .clock-config-group label {
+    margin-right: 3px;
+}
+.beam-saber .clock-config .clock-config-group select {
+    width: 100px;
+}
+/* --End Clocks-- */
+.beam-saber.crew.sheet .coins {
+  display: flex;
+  /* Hide the browser's default checkbox */
+  flex-wrap: wrap;
+}
+.beam-saber.crew.sheet .coins label {
+  height: 15px;
+  width: 15px;
+  background-color: #DAA520;
+  vertical-align: middle;
+  border: 1px solid #191813;
+  transition: filter 0.1s;
+  cursor: pointer;
+}
+.beam-saber.crew.sheet .coins label[for$="-0"] {
+  margin-right: 0px;
+}
+.beam-saber.crew.sheet .coins label:hover {
+  filter: brightness(0.8);
+  opacity: 0.9;
+}
+.beam-saber.crew.sheet .coins input {
+  display: none;
+}
+.beam-saber.crew.sheet .coins input:checked ~ label {
+  background-color: #EEEFFF;
+}
+.beam-saber.crew.sheet .coins input:checked + label {
+  background-color: #DAA520;
+}
+.beam-saber.crew.sheet .coins input ~ label {
+  margin-right: 3px;
+  margin-bottom: 3px;
+  transition: filter 0.2s;
+  cursor: pointer;
+}
+.beam-saber.crew.sheet .coins input ~ label[for$="0"] {
+  border-width: 2px;
+}
+.beam-saber.crew.sheet .coins input ~ label:hover {
+  filter: brightness(0.8);
+  opacity: 0.9;
+}
+.beam-saber.crew.sheet .coins.coins-hands {
+  width: 36px;
+}
+.beam-saber.crew.sheet .coins.coins-stashed {
+  width: 190px;
+}
+.beam-saber.crew.sheet .item {
+  justify-content: space-between;
+}
+.beam-saber.crew.sheet .item .item-body {
+  margin-bottom: 10px;
+}
+.beam-saber.crew.sheet .item .item-body * {
+  margin-right: 10px;
+}
+.beam-saber.crew.sheet .item .item-body .item-description {
+  font-style: italic;
+  text-align: justify;
+}
+.beam-saber.crew.sheet .item div {
+  flex-grow: 2;
+}
+.beam-saber.crew.sheet .item .item-control {
+  flex-grow: 1;
+  max-width: 18px;
+}
+.beam-saber.crew.sheet .item .item-body,
+.beam-saber.crew.sheet .item .item-class-label {
+  width: 100px;
+}
+.beam-saber.crew.sheet .item-crew-rep {
+  height: 50px;
+  padding-top: 10px;
+  justify-content: start;
+}
+.beam-saber.crew.sheet .item-class-label {
+  margin-top: 4px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  width: 125px;
+}
+.beam-saber.crew.sheet .item-crew-rep .item {
+  margin-bottom: 10px;
+  width: 150px;
+}
+.beam-saber.crew.sheet .name,
+.beam-saber.crew.sheet .lair {
+  margin-bottom: 10px;
+}
+.beam-saber.crew.sheet form.actor-sheet {
+  padding: 20px;
+}
+.beam-saber.crew.sheet nav {
+  width: 512px;
+  padding-bottom: 10px;
+}
+.beam-saber.crew.sheet .crew-coins {
+  display: flex;
+  /* Hide the browser's default checkbox */
+  flex-wrap: wrap;
+  max-width: 72px;
+}
+.beam-saber.crew.sheet .crew-coins label {
+  height: 15px;
+  width: 15px;
+  background-color: #DAA520;
+  vertical-align: middle;
+  border: 1px solid #191813;
+  transition: filter 0.1s;
+  cursor: pointer;
+}
+.beam-saber.crew.sheet .crew-coins label[for$="-0"] {
+  margin-right: 0px;
+}
+.beam-saber.crew.sheet .crew-coins label:hover {
+  filter: brightness(0.8);
+  opacity: 0.9;
+}
+.beam-saber.crew.sheet .crew-coins input {
+  display: none;
+}
+.beam-saber.crew.sheet .crew-coins input:checked ~ label {
+  background-color: #EEEFFF;
+}
+.beam-saber.crew.sheet .crew-coins input:checked + label {
+  background-color: #DAA520;
+}
+.beam-saber.crew.sheet .crew-coins label {
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+.beam-saber.crew.sheet .crew-reputation {
+  border-top: 3px solid #191813;
+  display: flex;
+  /* Hide the browser's default checkbox */
+}
+.beam-saber.crew.sheet .crew-reputation label {
+  height: 50px;
+  width: 17px;
+  background-image: url("assets/teeth/stresstooth-red.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 5px;
+  transition: filter 0.1s;
+  cursor: pointer;
+}
+.beam-saber.crew.sheet .crew-reputation label:last-of-type {
+  margin-right: 0px;
+}
+.beam-saber.crew.sheet .crew-reputation label[for$="-0"] {
+  width: auto;
+  height: auto;
+  background-image: none !important;
+  color: #EEEFFF;
+}
+.beam-saber.crew.sheet .crew-reputation label[for$="-0"] i {
+  margin-top: 4px;
+}
+.beam-saber.crew.sheet .crew-reputation label:hover {
+  filter: brightness(0.8);
+  opacity: 0.9;
+}
+.beam-saber.crew.sheet .crew-reputation input {
+  display: none;
+}
+.beam-saber.crew.sheet .crew-reputation input:checked ~ label {
+  background-image: url("assets/teeth/stresstooth-halfgrey.png");
+}
+.beam-saber.crew.sheet .crew-reputation input:checked + label {
+  background-image: url("assets/teeth/stresstooth-red.png");
+}
+.beam-saber.crew.sheet .crew-reputation input:disabled + label {
+  background-image: url(assets/teeth/stresstooth-black.png);
+}
+.beam-saber.crew.sheet .turf-container {
+  overflow-x: scroll;
+  overflow-y: clip;
+}
+.beam-saber.crew.sheet .turf-list {
+  display: flex;
+  flex-direction: column;
+  width: 855px;
+}
+.beam-saber.crew.sheet .turf-list .turf-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.beam-saber.crew.sheet .turf-list .turf-row *:first-child {
+  margin-left: 0px;
+}
+.beam-saber.crew.sheet .turf-list .turf-row *:last-child {
+  margin-right: 0px;
+}
+.beam-saber.crew.sheet .turf-list.section-non-editable .turf-block {
+  transition: filter 0.1s;
+  cursor: pointer;
+  width: 130px;
+  height: 100px;
+  background-color: #bbb;
+  position: relative;
+  margin: 20px;
+  flex-grow: initial;
+}
+.beam-saber.crew.sheet .turf-list.section-non-editable .turf-block:hover {
+  filter: brightness(0.8);
+  opacity: 0.9;
+}
+.beam-saber.crew.sheet .turf-list.section-non-editable .turf-block.turf-selected .connector {
+  background-color: #999;
+  z-index: 1;
+}
+.beam-saber.crew.sheet .turf-list.section-non-editable .turf-block .connector {
+  position: absolute;
+  display: block;
+  background-color: #bbb;
+}
+.beam-saber.crew.sheet .turf-list.section-non-editable .turf-block .connector.right, .beam-saber.crew.sheet .turf-list.section-non-editable .turf-block .connector.left {
+  width: 40px;
+  height: 20px;
+  top: 40px;
+}
+.beam-saber.crew.sheet .turf-list.section-non-editable .turf-block .connector.left {
+  left: -40px;
+}
+.beam-saber.crew.sheet .turf-list.section-non-editable .turf-block .connector.right {
+  left: 130px;
+}
+.beam-saber.crew.sheet .turf-list.section-non-editable .turf-block .connector.top, .beam-saber.crew.sheet .turf-list.section-non-editable .turf-block .connector.bottom {
+  height: 40px;
+  width: 20px;
+  left: 55px;
+}
+.beam-saber.crew.sheet .turf-list.section-non-editable .turf-block .connector.top {
+  top: -40px;
+}
+.beam-saber.crew.sheet .turf-list.section-non-editable .turf-block .connector.bottom {
+  top: 100px;
+}
+.beam-saber.crew.sheet .turf-list.section-non-editable .turf-block.turf-selected {
+  background-color: #999;
+}
+.beam-saber.crew.sheet .turf-list.section-non-editable .turf-block .turf-description {
+  border: none;
+  background: none;
+  resize: none;
+  width: 130px;
+  text-align: center;
+  min-height: auto;
+  font-size: 12px;
+}
+.beam-saber.crew.sheet .turf-list.section-non-editable .turf-block .turf-name {
+  border: none;
+  border-radius: 0px;
+  text-align: center;
+  font-weight: bold;
+}
+.beam-saber.crew.sheet .turf-list.section-non-editable .turf-block input[type=checkbox] {
+  transform: scale(1);
+}
+.beam-saber.crew.sheet .turf-list.section-non-editable .turf-block .turf-control.turf-select {
+  position: absolute;
+  top: -7px;
+  left: -7px;
+}
+.beam-saber.crew.sheet .turf-list.section-editable .turf-block {
+  transition: filter 0.1s;
+  cursor: pointer;
+  width: 130px;
+  height: 125px;
+  background-color: #bbb;
+  position: relative;
+  margin: 20px;
+  flex-grow: initial;
+}
+.beam-saber.crew.sheet .turf-list.section-editable .turf-block:hover {
+  filter: brightness(0.8);
+  opacity: 0.9;
+}
+.beam-saber.crew.sheet .turf-list.section-editable .turf-block.turf-selected .connector {
+  background-color: #999;
+  z-index: 1;
+}
+.beam-saber.crew.sheet .turf-list.section-editable .turf-block .connector {
+  position: absolute;
+  display: block;
+  background-color: #bbb;
+}
+.beam-saber.crew.sheet .turf-list.section-editable .turf-block .connector.right, .beam-saber.crew.sheet .turf-list.section-editable .turf-block .connector.left {
+  width: 40px;
+  height: 25px;
+  top: 50px;
+}
+.beam-saber.crew.sheet .turf-list.section-editable .turf-block .connector.left {
+  left: -40px;
+}
+.beam-saber.crew.sheet .turf-list.section-editable .turf-block .connector.right {
+  left: 130px;
+}
+.beam-saber.crew.sheet .turf-list.section-editable .turf-block .connector.top, .beam-saber.crew.sheet .turf-list.section-editable .turf-block .connector.bottom {
+  height: 40px;
+  width: 25px;
+  left: 52.5px;
+}
+.beam-saber.crew.sheet .turf-list.section-editable .turf-block .connector.top {
+  top: -40px;
+}
+.beam-saber.crew.sheet .turf-list.section-editable .turf-block .connector.bottom {
+  top: 125px;
+}
+.beam-saber.crew.sheet .turf-list.section-editable .turf-block.turf-selected {
+  background-color: #999;
+}
+.beam-saber.crew.sheet .turf-list.section-editable .turf-block .turf-description {
+  border: none;
+  background: none;
+  resize: none;
+  width: 130px;
+  text-align: center;
+  min-height: auto;
+  font-size: 12px;
+}
+.beam-saber.crew.sheet .turf-list.section-editable .turf-block .turf-name {
+  border: none;
+  border-radius: 0px;
+  text-align: center;
+  font-weight: bold;
+}
+.beam-saber.crew.sheet .turf-list.section-editable .turf-block input[type=checkbox] {
+  transform: scale(1);
+}
+.beam-saber.crew.sheet .turf-list.section-editable .turf-block .turf-control.turf-select {
+  position: absolute;
+  top: -7px;
+  left: -7px;
+}
+.beam-saber.crew.sheet .crew-hold {
+  border-top: 3px solid #191813;
+  display: flex;
+  /* Hide the browser's default checkbox */
+  width: 221px;
+}
+.beam-saber.crew.sheet .crew-hold label {
+  transition: filter 0.1s;
+  cursor: pointer;
+}
+.beam-saber.crew.sheet .crew-hold label:hover {
+  filter: brightness(0.8);
+  opacity: 0.9;
+}
+.beam-saber.crew.sheet .crew-hold label {
+  height: 50px;
+  width: 17px;
+  background-image: url("assets/teeth/stresstooth-halfgrey.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 5px;
+}
+.beam-saber.crew.sheet .crew-hold label:last-of-type {
+  margin-right: 0px;
+}
+.beam-saber.crew.sheet .crew-hold input {
+  display: none;
+}
+.beam-saber.crew.sheet .crew-hold input:checked + label {
+  background-image: url("assets/teeth/stresstooth-red.png");
+}
+.beam-saber.crew.sheet .crew-tier {
+  background-color: #999;
+  height: 33px;
+  width: 145px;
+  display: flex;
+  align-items: center;
+  border-top: 3px solid #191813;
+  display: flex;
+  /* Hide the browser's default checkbox */
+}
+.beam-saber.crew.sheet .crew-tier label {
+  transition: filter 0.1s;
+  cursor: pointer;
+}
+.beam-saber.crew.sheet .crew-tier label:hover {
+  filter: brightness(0.8);
+  opacity: 0.9;
+}
+.beam-saber.crew.sheet .crew-tier label:not([for$="-0"]) {
+  height: 18px;
+  width: 18px;
+  background-color: #191813;
+  vertical-align: middle;
+  border: 2px solid #191813;
+  border-radius: 9px;
+}
+.beam-saber.crew.sheet .crew-tier input {
+  display: none;
+}
+.beam-saber.crew.sheet .crew-tier input:checked ~ label:not([for$="-0"]) {
+  border-color: gray;
+  background-color: #EEEFFF;
+}
+.beam-saber.crew.sheet .crew-tier input:checked + label:not([for$="-0"]) {
+  background-color: #191813;
+  border-color: #191813;
+}
+.beam-saber.crew.sheet .crew-tier > * {
+  margin-right: 5px;
+}
+.beam-saber.crew.sheet .heat-wanted .small-teeth {
+  height: 20px;
+}
+.beam-saber.crew.sheet .heat-wanted .small-teeth label {
+  height: 100%;
+  width: 100%;
+  cursor: default;
+}
+.beam-saber.crew.sheet .experience-clues-container {
+  width: 340px;
+  font-size: 12px;
+}
+.beam-saber.crew.sheet .experience-clues-container .experience-clues-description {
+  font-weight: bold;
+}
+.beam-saber.crew.sheet .experience-clues-container .experience-clues {
+  font-style: italic;
+}
+.beam-saber.crew.sheet .edgeflaw input {
+  display: none;
+}
+.beam-saber.crew.sheet .edgeflaw input:checked + label {
+  color: red;
+}
+.beam-saber.crew.sheet .gang-expert-type-selector .gang-type-boxes {
+  flex-wrap: wrap;
+}
+.beam-saber.crew.sheet .acquaintance i {
+  padding: 1px;
+  margin-right: 3px;
+  width: 1.2em;
+  text-align: center;
+}
+.beam-saber.crew.sheet .acquaintance i.red-icon {
+  color: #880000;
+}
+.beam-saber.crew.sheet .acquaintance i.green-icon {
+  color: #006600;
+}
+.beam-saber.crew.sheet .cohorts {
+  flex-wrap: wrap;
+}
+.beam-saber.crew.sheet .cohorts .cohort-block-wrapper {
+  width: 400px;
+}
+.beam-saber.crew.sheet .cohorts .label-stripe {
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 0px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.beam-saber.crew.sheet .cohorts .item-control {
+  flex-grow: 0;
+}
+.beam-saber.crew.sheet .cohorts .cohort-body img {
+  border: 2px solid #191813;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-top: none;
+}
+.beam-saber.crew.sheet .cohorts .cohort-body > div {
+  margin-bottom: 10px;
+}
+.beam-saber.crew.sheet .cohorts .cohort-block-harm {
+  justify-content: space-around;
+}
+.beam-saber.crew.sheet .cohorts .cohort-block-harm input[type=radio] {
+  display: none;
+}
+.beam-saber.crew.sheet .cohorts .cohort-block-harm input[type=radio]:checked + label {
+  color: #EEEFFF;
+  font-weight: bold;
+  background-color: #191813;
+}
+.beam-saber.crew.sheet .cohorts .cohort-block-harm label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 0 0;
+  border: 2px solid #191813;
+  border-top: none;
+  border-left: none;
+  padding: 0 5px;
+  text-align: center;
+}
+.beam-saber.crew.sheet .class-name {
+  width: 320px;
+  height: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 48px;
+  text-transform: uppercase;
+  border: 3px solid #191813;
+}
+.beam-saber.crew.sheet .hunting-ground {
+  width: 180px;
+  height: 120px;
+  text-align: center;
+}
+.beam-saber.crew.sheet .hunting-ground-label a {
+  font-size: 16px;
+  font-family: "Crimson Text", serif;
+  font-weight: bold;
+}
+.beam-saber.crew.sheet .class-name .big-name {
+  font-weight: bold;
+  font-family: Kirsty, serif;
+}
+.beam-saber.crew.sheet .class-name .big-description {
+  font-size: 20px;
+  font-family: "Crimson Text", serif;
+  color: #191813;
+}
+.beam-saber.crew.sheet .big-teeth-section {
+  border-top: 3px solid #191813;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0px;
+  /* Trauma */
+}
+.beam-saber.crew.sheet .big-teeth-section > * {
+  margin-right: 10px;
+}
+.beam-saber.crew.sheet .big-teeth-section > *:last-child {
+  margin-right: 0px;
+}
+.beam-saber.crew.sheet .big-teeth-section:last-child {
+  margin-right: 0px;
+}
+.beam-saber.crew.sheet .big-teeth-section .big-teeth {
+  display: flex;
+  /* Hide the browser's default checkbox */
+}
+.beam-saber.crew.sheet .big-teeth-section .big-teeth label {
+  height: 50px;
+  width: 17px;
+  background-image: url("assets/teeth/stresstooth-red.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 5px;
+  transition: filter 0.1s;
+  cursor: pointer;
+}
+.beam-saber.crew.sheet .big-teeth-section .big-teeth label:last-of-type {
+  margin-right: 0px;
+}
+.beam-saber.crew.sheet .big-teeth-section .big-teeth label[for$="-0"] {
+  width: auto;
+  height: auto;
+  background-image: none !important;
+  color: #EEEFFF;
+}
+.beam-saber.crew.sheet .big-teeth-section .big-teeth label[for$="-0"] i {
+  margin-top: 4px;
+}
+.beam-saber.crew.sheet .big-teeth-section .big-teeth label:hover {
+  filter: brightness(0.8);
+  opacity: 0.9;
+}
+.beam-saber.crew.sheet .big-teeth-section .big-teeth input {
+  display: none;
+}
+.beam-saber.crew.sheet .big-teeth-section .big-teeth input:checked ~ label {
+  background-image: url("assets/teeth/stresstooth-halfgrey.png");
+}
+.beam-saber.crew.sheet .big-teeth-section .big-teeth input:checked + label {
+  background-image: url("assets/teeth/stresstooth-red.png");
+}
+.beam-saber.crew.sheet .big-teeth-section .small-teeth-container .small-teeth-wrap {
+  display: flex;
+  /* Hide the browser's default checkbox */
+  flex-direction: column;
+}
+.beam-saber.crew.sheet .big-teeth-section .small-teeth-container .small-teeth-wrap label {
+  height: 50px;
+  width: 17px;
+  background-image: url("assets/teeth/shorttooth-red.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 5px;
+  cursor: not-allowed;
+}
+.beam-saber.crew.sheet .big-teeth-section .small-teeth-container .small-teeth-wrap label:last-of-type {
+  margin-right: 0px;
+}
+.beam-saber.crew.sheet .big-teeth-section .small-teeth-container .small-teeth-wrap label[for$="-0"] {
+  width: auto;
+  height: auto;
+  background-image: none !important;
+  color: #EEEFFF;
+}
+.beam-saber.crew.sheet .big-teeth-section .small-teeth-container .small-teeth-wrap label[for$="-0"] i {
+  margin-top: 4px;
+}
+.beam-saber.crew.sheet .big-teeth-section .small-teeth-container .small-teeth-wrap input {
+  display: none;
+}
+.beam-saber.crew.sheet .big-teeth-section .small-teeth-container .small-teeth-wrap input:checked ~ label {
+  background-image: url("assets/teeth/shorttooth-grey.png");
+}
+.beam-saber.crew.sheet .big-teeth-section .small-teeth-container .small-teeth-wrap input:checked + label {
+  background-image: url("assets/teeth/shorttooth-red.png");
+}
+.beam-saber.crew.sheet .big-teeth-section .small-teeth-container .small-teeth-wrap .small-teeth {
+  display: flex;
+  flex-direction: row;
+}
+.beam-saber.crew.sheet .big-teeth-section .trauma-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.beam-saber.crew.sheet .big-teeth-section .trauma-list label {
+  cursor: pointer;
+  font-size: 19px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-right: 10px;
+  transition: filter 0.1s;
+  cursor: pointer;
+  /* Hide the browser's default checkbox */
+}
+.beam-saber.crew.sheet .big-teeth-section .trauma-list label:hover {
+  filter: brightness(0.8);
+  opacity: 0.9;
+}
+.beam-saber.crew.sheet .big-teeth-section .trauma-list label input {
+  display: none;
+}
+.beam-saber.crew.sheet .big-teeth-section .trauma-list label input:checked ~ .checkmark {
+  color: red;
+}
+.beam-saber.crew.sheet .big-teeth-section .trauma-list label .checkmark {
+  text-decoration: none;
+  font-weight: bold;
+}
+.beam-saber.crew.sheet header {
+  margin-bottom: 10px;
+}
+.beam-saber.actor.pc {
+  /*
+  *  Elements that can be changed will hint this by dimming and fading a little on hover
+  */
+  /*
+   * Toothradio. Some (eg trauma) are not changeable, hence the option.
+   */
+  /*
+   * Custom Radio
+   */
+  /*
+   * Custom Radio Squared
+   */
+  /*
+   * Checkboxes underscored.
+   */
+  /*
+   * Create Clock
+   */
+  /*
+   * Turf Block
+   */
+  /*
+   * Toothradio single elements
+   */
+  /*
+   * Custom Radio Round
+   */
+  /*
+   * General Styles
+   * Cleaned out things that don't appear to apply to the character sheet, and exist in other, separated SCSS files.
+   * Some things *might* be missing, but at a glance, everything looks to be in order.
+   */
+}
+.beam-saber.actor.pc * .name-alias img.portrait {
+  max-width: 200px;
+  max-height: 200px;
+  width: auto;
+  height: auto;
+}
+.beam-saber.actor.pc * .tab[data-tab] {
+  display: none;
+}
+.beam-saber.actor.pc * .tab[data-tab].active {
+  display: block;
+}
+.beam-saber.actor.pc * form.actor-sheet {
+  padding: 20px;
+}
+.beam-saber.actor.pc * .big-teeth-section {
+  border-top: 3px solid #191813;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  /* Trauma */
+}
+.beam-saber.actor.pc * .big-teeth-section > * {
+  margin-right: 10px;
+}
+.beam-saber.actor.pc * .big-teeth-section > *:last-child {
+  margin-right: 0px;
+}
+.beam-saber.actor.pc * .big-teeth-section:last-child {
+  margin-right: 0px;
+}
+.beam-saber.actor.pc * .big-teeth-section .big-teeth {
+  display: flex;
+  /* Hide the browser's default checkbox */
+}
+.beam-saber.actor.pc * .big-teeth-section .big-teeth label {
+  height: 50px;
+  width: 17px;
+  background-image: url("assets/teeth/stresstooth-red.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 5px;
+  transition: filter 0.1s;
+  cursor: pointer;
+}
+.beam-saber.actor.pc * .big-teeth-section .big-teeth label:last-of-type {
+  margin-right: 0px;
+}
+.beam-saber.actor.pc * .big-teeth-section .big-teeth label[for$="-0"] {
+  width: auto;
+  height: auto;
+  background-image: none !important;
+  color: #EEEFFF;
+}
+.beam-saber.actor.pc * .big-teeth-section .big-teeth label[for$="-0"] i {
+  margin-top: 4px;
+}
+.beam-saber.actor.pc * .big-teeth-section .big-teeth label:hover {
+  filter: brightness(0.8);
+  opacity: 0.9;
+}
+.beam-saber.actor.pc * .big-teeth-section .big-teeth input {
+  display: none;
+}
+.beam-saber.actor.pc * .big-teeth-section .big-teeth input:checked ~ label {
+  background-image: url("assets/teeth/stresstooth-halfgrey.png");
+}
+.beam-saber.actor.pc * .big-teeth-section .big-teeth input:checked + label {
+  background-image: url("assets/teeth/stresstooth-red.png");
+}
+.beam-saber.actor.pc * .big-teeth-section .small-teeth-container .small-teeth-wrap {
+  display: flex;
+  /* Hide the browser's default checkbox */
+  flex-direction: column;
+}
+.beam-saber.actor.pc * .big-teeth-section .small-teeth-container .small-teeth-wrap label {
+  height: 50px;
+  width: 17px;
+  background-image: url("assets/teeth/shorttooth-red.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 5px;
+  cursor: not-allowed;
+}
+.beam-saber.actor.pc * .big-teeth-section .small-teeth-container .small-teeth-wrap label:last-of-type {
+  margin-right: 0px;
+}
+.beam-saber.actor.pc * .big-teeth-section .small-teeth-container .small-teeth-wrap label[for$="-0"] {
+  width: auto;
+  height: auto;
+  background-image: none !important;
+  color: #EEEFFF;
+}
+.beam-saber.actor.pc * .big-teeth-section .small-teeth-container .small-teeth-wrap label[for$="-0"] i {
+  margin-top: 4px;
+}
+.beam-saber.actor.pc * .big-teeth-section .small-teeth-container .small-teeth-wrap input {
+  display: none;
+}
+.beam-saber.actor.pc * .big-teeth-section .small-teeth-container .small-teeth-wrap input:checked ~ label {
+  background-image: url("assets/teeth/shorttooth-grey.png");
+}
+.beam-saber.actor.pc * .big-teeth-section .small-teeth-container .small-teeth-wrap input:checked + label {
+  background-image: url("assets/teeth/shorttooth-red.png");
+}
+.beam-saber.actor.pc * .big-teeth-section .small-teeth-container .small-teeth-wrap .small-teeth {
+  display: flex;
+  flex-direction: row;
+}
+.beam-saber.actor.pc * .big-teeth-section .trauma-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.beam-saber.actor.pc * .big-teeth-section .trauma-list label {
+  cursor: pointer;
+  font-size: 19px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-right: 10px;
+  transition: filter 0.1s;
+  cursor: pointer;
+  /* Hide the browser's default checkbox */
+}
+.beam-saber.actor.pc * .big-teeth-section .trauma-list label:hover {
+  filter: brightness(0.8);
+  opacity: 0.9;
+}
+.beam-saber.actor.pc * .big-teeth-section .trauma-list label input {
+  display: none;
+}
+.beam-saber.actor.pc * .big-teeth-section .trauma-list label input:checked ~ .checkmark {
+  color: red;
+}
+.beam-saber.actor.pc * .big-teeth-section .trauma-list label .checkmark {
+  text-decoration: none;
+  font-weight: bold;
+}
+.beam-saber.actor.pc * .character-stress label[for$="-0"] {
+  margin-right: 0px;
+}
+.beam-saber.actor.pc * .abilities .item-name, .beam-saber.actor.pc * .loadout .item-name {
+  width: 100px;
+}
+.beam-saber.actor.pc * .abilities .item-body, .beam-saber.actor.pc * .loadout .item-body {
+  width: auto;
+}
+.beam-saber.actor.pc * .abilities .item-description, .beam-saber.actor.pc * .loadout .item-description {
+  width: 260px;
+}
+.beam-saber.actor.pc * .abilities .label-stripe p:first-child {
+  margin-right: 10px;
+}
+.beam-saber.actor.pc * .loadout .item-add-popup {
+  margin-left: 10px;
+}
+.beam-saber.actor.pc * .teeth-experience {
+  display: flex;
+  /* Hide the browser's default checkbox */
+  position: absolute;
+  top: 0px;
+  right: 10px;
+}
+.beam-saber.actor.pc * .teeth-experience label {
+  height: 30px;
+  width: 10px;
+  background-image: url("assets/teeth/stresstooth-red.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 5px;
+  transition: filter 0.1s;
+  cursor: pointer;
+}
+.beam-saber.actor.pc * .teeth-experience label:last-of-type {
+  margin-right: 0px;
+}
+.beam-saber.actor.pc * .teeth-experience label[for$="-0"] {
+  width: auto;
+  height: auto;
+  background-image: none !important;
+  color: #EEEFFF;
+}
+.beam-saber.actor.pc * .teeth-experience label[for$="-0"] i {
+  margin-top: 4px;
+}
+.beam-saber.actor.pc * .teeth-experience label:hover {
+  filter: brightness(0.8);
+  opacity: 0.9;
+}
+.beam-saber.actor.pc * .teeth-experience input {
+  display: none;
+}
+.beam-saber.actor.pc * .teeth-experience input:checked ~ label {
+  background-image: url("assets/teeth/stresstooth-halfgrey.png");
+}
+.beam-saber.actor.pc * .teeth-experience input:checked + label {
+  background-image: url("assets/teeth/stresstooth-red.png");
+}
+.beam-saber.actor.pc * .harm-armor {
+  display: flex;
+}
+.beam-saber.actor.pc * .harm-armor .character-harm {
+  width: 100%;
+}
+.beam-saber.actor.pc * .harm-armor .character-harm table {
+  width: 100%;
+}
+.beam-saber.actor.pc * .harm-armor .character-harm table th {
+  background-color: #191813;
+  color: #EEEFFF;
+}
+.beam-saber.actor.pc * .harm-armor .character-harm table input[type=text] {
+  width: 100%;
+}
+.beam-saber.actor.pc * .harm-armor .character-health-clock {
+  margin: 0 auto;
+  position: relative;
+}
+.beam-saber.actor.pc * .harm-armor .character-health-clock .blades-clock {
+  position: relative;
+  padding: 0;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  list-style: none;
+  overflow: hidden;
+  background-size: cover;
+}
+.beam-saber.actor.pc * .harm-armor .character-health-clock .blades-clock label {
+  overflow: hidden;
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  transform-origin: 0% 100%;
+  transition: filter 0.1s;
+  cursor: pointer;
+}
+.beam-saber.actor.pc * .harm-armor .character-health-clock .blades-clock label:hover {
+  filter: brightness(0.8);
+  opacity: 0.9;
+}
+.beam-saber.actor.pc * .harm-armor .character-health-clock .blades-clock input {
+  position: absolute;
+  display: none;
+}
+.beam-saber.actor.pc * .harm-armor .character-health-clock .blades-clock input[value="0"] {
+  display: none;
+}
+.beam-saber.actor.pc * .harm-armor .character-health-clock .blades-clock *:nth-child(3) {
+  transform: rotate(0deg) skewY(180deg);
+}
+.beam-saber.actor.pc * .harm-armor .character-health-clock .blades-clock *:nth-child(5) {
+  transform: rotate(90deg) skewY(180deg);
+}
+.beam-saber.actor.pc * .harm-armor .character-health-clock .blades-clock *:nth-child(7) {
+  transform: rotate(180deg) skewY(180deg);
+}
+.beam-saber.actor.pc * .harm-armor .character-health-clock .blades-clock *:nth-child(9) {
+  transform: rotate(270deg) skewY(180deg);
+}
+.beam-saber.actor.pc * .harm-armor .character-armor-uses div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.beam-saber.actor.pc * .attributes {
+  display: flex;
+  flex-direction: column;
+  width: 225px;
+}
+.beam-saber.actor.pc * .attributes .stripe {
+  background-color: #191813;
+  color: #EEEFFF;
+  font-size: 17px;
+  padding-left: 5px;
+}
+.beam-saber.actor.pc * .attributes .attribute-label,
+.beam-saber.actor.pc * .attributes .attribute-skill-label {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.beam-saber.actor.pc * .attributes .attribute-skill-label {
+  letter-spacing: 1px;
+}
+.beam-saber.actor.pc * .attributes .attributes-exp {
+  position: relative;
+  margin-bottom: 10px;
+}
+.beam-saber.actor.pc * .attributes .attributes-exp .stripe-tooth-body {
+  display: flex;
+  /* Hide the browser's default checkbox */
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.beam-saber.actor.pc * .attributes .attributes-exp .stripe-tooth-body label {
+  height: 30px;
+  width: 10px;
+  background-image: url("assets/teeth/xptooth-red.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 5px;
+  transition: filter 0.1s;
+  cursor: pointer;
+}
+.beam-saber.actor.pc * .attributes .attributes-exp .stripe-tooth-body label:last-of-type {
+  margin-right: 0px;
+}
+.beam-saber.actor.pc * .attributes .attributes-exp .stripe-tooth-body label[for$="-0"] {
+  width: auto;
+  height: auto;
+  background-image: none !important;
+  color: #EEEFFF;
+}
+.beam-saber.actor.pc * .attributes .attributes-exp .stripe-tooth-body label[for$="-0"] i {
+  margin-top: 4px;
+}
+.beam-saber.actor.pc * .attributes .attributes-exp .stripe-tooth-body label:hover {
+  filter: brightness(0.8);
+  opacity: 0.9;
+}
+.beam-saber.actor.pc * .attributes .attributes-exp .stripe-tooth-body input {
+  display: none;
+}
+.beam-saber.actor.pc * .attributes .attributes-exp .stripe-tooth-body input:checked ~ label {
+  background-image: url("assets/teeth/xptooth-white.png");
+}
+.beam-saber.actor.pc * .attributes .attributes-exp .stripe-tooth-body input:checked + label {
+  background-image: url("assets/teeth/xptooth-red.png");
+}
+.beam-saber.actor.pc * .attributes .attributes-container {
+  display: flex;
+  margin: 3px 0px;
+  display: flex;
+  /* Hide the browser's default checkbox */
+}
+.beam-saber.actor.pc * .attributes .attributes-container label {
+  height: 15px;
+  width: 15px;
+  background-color: #191813;
+  vertical-align: middle;
+  border: 2px solid #191813;
+  border-radius: 24px;
+  transition: filter 0.1s;
+  cursor: pointer;
+}
+.beam-saber.actor.pc * .attributes .attributes-container label[for$="-0"] {
+  height: 5px;
+  width: 5px;
+  border-radius: 24px;
+  background-image: none !important;
+  background-color: red !important;
+  margin-right: 0px;
+}
+.beam-saber.actor.pc * .attributes .attributes-container label:hover {
+  filter: brightness(0.7);
+  opacity: 0.7;
+}
+.beam-saber.actor.pc * .attributes .attributes-container input {
+  display: none;
+}
+.beam-saber.actor.pc * .attributes .attributes-container input:checked ~ label {
+  background-color: #EEEFFF;
+}
+.beam-saber.actor.pc * .attributes .attributes-container input:checked + label {
+  transition: filter 0.1s;
+  cursor: pointer;
+  background-color: #191813;
+}
+.beam-saber.actor.pc * .attributes .attributes-container input:checked + label:hover {
+  filter: brightness(0.7);
+  opacity: 0.7;
+}
+.beam-saber.actor.pc * .attributes .attributes-container * {
+  margin-right: 5px;
+}
+.beam-saber.actor.pc * .item {
+  justify-content: space-between;
+}
+.beam-saber.actor.pc * .item .item-body {
+  margin-bottom: 10px;
+}
+.beam-saber.actor.pc * .item .item-body * {
+  margin-right: 10px;
+}
+.beam-saber.actor.pc * .item .item-body .item-description {
+  font-style: italic;
+  text-align: justify;
+}
+.beam-saber.actor.pc * .item div {
+  flex-grow: 2;
+}
+.beam-saber.actor.pc * .item .item-control {
+  flex-grow: 1;
+}
+
+.beam-saber.actor.pc * .item-class-label {
+  margin-bottom: 10px;
+}
+.beam-saber.actor.pc * .name,
+.beam-saber.actor.pc * .lair,
+.beam-saber.actor.pc * .alias {
+  margin-bottom: 10px;
+}
+.beam-saber.actor.pc * .coins {
+  display: flex;
+  /* Hide the browser's default checkbox */
+  flex-wrap: wrap;
+}
+.beam-saber.actor.pc * .coins label {
+  height: 15px;
+  width: 15px;
+  background-color: #DAA520;
+  vertical-align: middle;
+  border: 1px solid #191813;
+  transition: filter 0.1s;
+  cursor: pointer;
+}
+.beam-saber.actor.pc * .coins label[for$="-0"] {
+  margin-right: 0px;
+}
+.beam-saber.actor.pc * .coins label:hover {
+  filter: brightness(0.8);
+  opacity: 0.9;
+}
+.beam-saber.actor.pc * .coins input {
+  display: none;
+}
+.beam-saber.actor.pc * .coins input:checked ~ label {
+  background-color: #EEEFFF;
+}
+.beam-saber.actor.pc * .coins input:checked + label {
+  background-color: #DAA520;
+}
+.beam-saber.actor.pc * .coins input ~ label {
+  margin-right: 3px;
+  margin-bottom: 3px;
+  transition: filter 0.2s;
+  cursor: pointer;
+}
+.beam-saber.actor.pc * .coins input ~ label[for$="0"] {
+  border-width: 2px;
+}
+.beam-saber.actor.pc * .coins input ~ label:hover {
+  filter: brightness(0.8);
+  opacity: 0.9;
+}
+.beam-saber.actor.pc * .coins.coins-hands {
+  width: 36px;
+}
+.beam-saber.actor.pc * .coins.coins-stashed {
+  width: 190px;
+}
+.beam-saber.actor.pc * .acquaintance {
+  line-height: 1em;
+  padding: 2px 5px;
+}
+.beam-saber.actor.pc * .acquaintance i {
+  padding: 1px;
+  margin-right: 3px;
+  width: 1.2em;
+  text-align: center;
+}
+.beam-saber.actor.pc * .acquaintance i.red-icon {
+  color: #880000;
+}
+.beam-saber.actor.pc * .acquaintance i.green-icon {
+  color: #006600;
+}
+.beam-saber.item.sheet .item {
+  justify-content: space-between;
+}
+.beam-saber.item.sheet .item .item-body {
+  margin-bottom: 10px;
+}
+.beam-saber.item.sheet .item .item-body * {
+  margin-right: 10px;
+}
+.beam-saber.item.sheet .item .item-body .item-description {
+  font-style: italic;
+  text-align: justify;
+}
+.beam-saber.item.sheet .item div {
+  flex-grow: 2;
+}
+.beam-saber.item.sheet .item .item-control {
+  flex-grow: 1;
+}
+.beam-saber.item.sheet .item .item-body,
+.beam-saber.item.sheet .item .item-class-label {
+  width: auto;
+}
+.beam-saber.item.sheet .item-class-label {
+  margin-bottom: 10px;
+}
+.beam-saber .npc-sheet .text-line {
+  height: 26px;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  width: 200px;
+  text-align: right;
+  font-family: Kirsty, serif;
+}
+.beam-saber .npc-sheet {
+  justify-content: start;
+}
+.beam-saber .npc-sheet img {
+  margin: 20px;
+}
+.beam-saber .npc-lines {
+  width: 700px;
+}
+.chat-label {
+  background-color: #191813;
+  font-family: Kirsty, serif;
+  color: #EEEFFF;
+  font-size: 21px;
+  text-align: center;
+  padding: 0px 5px;
+  height: 30px !important;
+  text-transform: capitalize;
+}
+
+.chat-label-small {
+  background-color: #999;
+  color: #191813;
+  font-size: small;
+  text-align: center;
+  padding: 3px 5px;
+  height: 20px !important;
+}
+
+.chat-item img {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.label-stripe-chat {
+  text-transform: uppercase;
+  background-color: #191813;
+  color: #EEEFFF;
+  margin-bottom: 10px;
+  position: relative;
+  padding-top: 3px;
+  display: flex;
+  font-weight: bold;
+  margin: 0;
+}
+
+.label-stripe-chat-small {
+  text-transform: capitalize;
+  background-color: #999;
+  color: #191813;
+  margin-bottom: 10px;
+  position: relative;
+  padding-top: 3px;
+  display: flex;
+  font-weight: bold;
+}
+
+.blades-die-tooltip .die {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: large;
+}
+.blades-die-tooltip .die.critical-success {
+  color: #12a012;
+}
+.blades-die-tooltip .die.success {
+  color: #008000;
+}
+.blades-die-tooltip .die.partial-success {
+  color: #04578f;
+}
+.blades-die-tooltip .die.failure {
+  color: red;
+}
+
+.items-to-add {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.items-to-add input[type=radio],
+.items-to-add input[type=checkbox] {
+  display: none;
+}
+.items-to-add input[type=radio]:checked + label,
+.items-to-add input[type=checkbox]:checked + label {
+  font-weight: bold;
+}
+.items-to-add .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #191813;
+  color: #EEEFFF;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 9999;
+}
+.items-to-add .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+/*# sourceMappingURL=blades.css.map */
